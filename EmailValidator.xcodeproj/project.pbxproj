@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		523B50BE2BECA96100CB2D9D /* EmailValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 523B50BD2BECA96100CB2D9D /* EmailValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		523B50C82BECAA2100CB2D9D /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B50C72BECAA2100CB2D9D /* EmailValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		523B50BA2BECA96100CB2D9D /* EmailValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmailValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		523B50BD2BECA96100CB2D9D /* EmailValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailValidator.h; sourceTree = "<group>"; };
+		523B50C52BECA9A700CB2D9D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		523B50C72BECAA2100CB2D9D /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			children = (
 				523B50BC2BECA96100CB2D9D /* EmailValidator */,
 				523B50BB2BECA96100CB2D9D /* Products */,
+				523B50C42BECA9A700CB2D9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,8 +50,17 @@
 			isa = PBXGroup;
 			children = (
 				523B50BD2BECA96100CB2D9D /* EmailValidator.h */,
+				523B50C72BECAA2100CB2D9D /* EmailValidator.swift */,
 			);
 			path = EmailValidator;
+			sourceTree = "<group>";
+		};
+		523B50C42BECA9A700CB2D9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				523B50C52BECA9A700CB2D9D /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +106,7 @@
 				TargetAttributes = {
 					523B50B92BECA96100CB2D9D = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -129,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523B50C82BECAA2100CB2D9D /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -288,6 +304,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -296,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
